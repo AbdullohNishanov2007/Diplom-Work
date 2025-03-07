@@ -1,0 +1,101 @@
+/* Contact.css */
+
+.contact-container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 20px auto; /* Центрирование контейнера */
+    padding: 30px; /* Отступы */
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+}
+
+.contact-container h1 {
+    font-size: 2.5em; /* Размер заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+    color: #2c3e50; /* Цвет заголовка */
+    text-align: center; /* Центрирование заголовка */
+}
+
+.contact-container h2 {
+    font-size: 1.8em; /* Размер подзаголовка */
+    margin-top: 30px; /* Отступ сверху */
+    color: #2980b9; /* Цвет подзаголовка */
+    border-bottom: 2px solid #2980b9; /* Подчеркивание подзаголовка */
+    padding-bottom: 10px; /* Отступ снизу */
+}
+
+.contact-container p {
+    font-size: 1.1em; /* Размер текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin-bottom: 15px; /* Отступ снизу */
+    color: #34495e; /* Цвет текста */
+}
+
+.contact-container ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.contact-container ul li {
+    margin-bottom: 10px; /* Отступ между элементами списка */
+    color: #34495e; /* Цвет текста списка */
+}
+
+.contact-form {
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Отступ между группами формы */
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Отступ снизу для метки */
+    font-weight: bold; /* Жирный шрифт для метки */
+    color: #34495e; /* Цвет метки */
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px; /* Отступы внутри полей */
+    border: 1px solid #ccc; /* Цвет границы */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 1em; /* Размер шрифта */
+    width: 100%; /* Ширина 100% для адаптивности */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Плавный переход цвета границы и тени */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2980b9; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Тень при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}
+
+button {
+    padding: 12px 15px; /* Отступы внутри кнопки */
+    background-color: #2980b9; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 1em; /* Размер шрифта */
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход цвета фона и эффекта нажатия */
+}
+
+button:hover {
+    background-color: #1a6a8a; /* Цвет фона кнопки при наведении */
+    transform: translateY(-2px); /* Эффект поднятия кнопки при наведении */
+}
+
+button:active {
+    transform: translateY(0); /* Возвращаем кнопку на место при нажатии */
+}
+
+.img_c {
+    width: 90px;
+    margin-left: 15px;
+}

@@ -1,0 +1,46 @@
+/* Header.css */
+
+header {
+    background-color: #34495e; /* Темный фон */
+    color: white; /* Цвет текста */
+    padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+.container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.header-content {
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Распределяем пространство между логотипом и навигацией */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.logo img {
+    border-radius: 50px;
+    max-height: 100px; /* Максимальная высота логотипа */
+    max-width: 100px;
+}
+
+.nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox для горизонтального расположения */
+}
+
+.nav li {
+    margin-left: 20px; /* Отступы между пунктами навигации */
+}
+
+.nav a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.nav a:hover {
+    color: #3498db; /* Цвет ссылок при наведении */
+}

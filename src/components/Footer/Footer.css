@@ -1,0 +1,55 @@
+/* styles.css или ваш файл стилей */
+
+footer {
+    background-color: #2c3e50; /* Темный фон */
+    color: white; /* Цвет текста */
+    padding: 40px 0; /* Отступы сверху и снизу */
+}
+
+.container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.footer-info {
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+}
+
+.img-f {
+    flex: 1; /* Занимает 1 часть пространства */
+    display: flex; /* Используем flexbox для центрирования изображения */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.img-f img {
+    max-height: 200px; /* Максимальная высота изображения */
+    max-width: 200px; /* Максимальная ширина изображения */
+    border-radius: 50%; /* Круглая форма изображения */
+}
+
+.first-list, .second-list, .third-list {
+    flex: 1; /* Каждая колонка занимает равное пространство */
+    margin: 0 20px; /* Отступы между колонками */
+}
+
+.list-title {
+    font-size: 1.2em; /* Размер шрифта заголовка */
+    margin-bottom: 10px; /* Отступ снизу */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+.a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: block; /* Каждая ссылка занимает всю ширину */
+    margin: 5px 0; /* Отступы между ссылками */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.a:hover {
+    color: #3498db; /* Цвет ссылок при наведении */
+}

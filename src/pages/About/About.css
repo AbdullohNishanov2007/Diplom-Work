@@ -1,0 +1,52 @@
+/* About.css */
+
+.about-container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 20px auto; /* Центрирование контейнера */
+    padding: 30px; /* Отступы */
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    line-height: 1.6; /* Межстрочный интервал */
+}
+
+.about-container h1 {
+    font-size: 2.5em; /* Размер заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+    color: #2c3e50; /* Цвет заголовка */
+    text-align: center; /* Центрирование заголовка */
+}
+
+.about-container h2 {
+    font-size: 1.8em; /* Размер подзаголовка */
+    margin-top: 30px; /* Отступ сверху */
+    color: #2980b9; /* Цвет подзаголовка */
+    border-bottom: 2px solid #2980b9; /* Подчеркивание подзаголовка */
+    padding-bottom: 10px; /* Отступ снизу */
+}
+
+.about-container p {
+    font-size: 1.1em; /* Размер текста */
+    margin-bottom: 15px; /* Отступ снизу */
+    color: #34495e; /* Цвет текста */
+}
+
+.about-container ul {
+    list-style-type: disc; /* Маркеры списка */
+    margin-left: 20px; /* Отступ слева */
+    padding: 0; /* Убираем отступы */
+}
+
+.about-container ul li {
+    margin-bottom: 10px; /* Отступ между элементами списка */
+    color: #34495e; /* Цвет текста списка */
+}
+
+.highlight {
+    background-color: #ecf0f1; /* Светлый фон для выделения */
+    padding: 15px; /* Отступы */
+    border-left: 5px solid #2980b9; /* Левый бордер */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    font-style: italic; /* Курсивный текст */
+}
