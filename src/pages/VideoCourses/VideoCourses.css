@@ -1,70 +1,72 @@
-/* VideoCourses.css */
+/* styles.css */
 
-.video-courses-container {
-    max-width: 1000px; /* Максимальная ширина контейнера */
-    margin: 20px auto; /* Центрирование контейнера */
-    padding: 30px; 
-    background-color: #ffffff; /* Белый фон */
+.courses-container {
+    display: flex; /* Используем flexbox для расположения карточек */
+    flex-wrap: wrap; /* Позволяем карточкам переноситься на новую строку */
+    justify-content: space-around; /* Распределяем карточки по контейнеру */
+    padding: 20px; /* Отступы вокруг контейнера */
+}
+
+.course-card {
+    background-color: #fff; /* Белый фон карточки */
     border-radius: 10px; /* Закругленные углы */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень */
-    font-family: 'Arial', sans-serif; /* Шрифт */
-    /* line-height: 1.6;  */
-}
-
-.video-courses-container h1 {
-    font-size: 2.5em; /* Размер заголовка */
-    margin-bottom: 20px; /* Отступ снизу */
-    color: #2c3e50; /* Цвет заголовка */
-    text-align: center; /* Центрирование заголовка */
-}
-
-.video-courses-container h2 {
-    font-size: 1.8em; /* Размер подзаголовка */
-    margin-top: 20px; /* Отступ сверху */
-    color: #2980b9; /* Цвет подзаголовка */
-}
-
-.video-courses-container p {
-    font-size: 1.1em; /* Размер текста */
-    margin-bottom: 15px; /* Отступ снизу */
-    color: #34495e; /* Цвет текста */
-}
-
-.video-courses-container ul {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
-    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    margin: 10px; /* Отступы между карточками */
+    width: 300px; /* Ширина карточки */
+    overflow: hidden; /* Скрываем переполнение */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+    height: 420px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.video-courses-container ul li {
-    margin-bottom: 20px; /* Отступ между элементами списка */
-    padding: 15px; /* Отступы внутри элемента списка */
-    border: 1px solid #ccc; /* Граница элемента списка */
-    border-radius: 5px; /* Закругленные углы */
-    background-color: #f9f9f9; /* Светлый фон для элемента списка */
-    transition: box-shadow 0.3s; /* Плавный переход тени */
-    width: 300px;
-    height: 300px;
+.course-card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+    background-color: #ebebeb;
 }
 
-.video-courses-container ul li:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+.course-image {
+    width: 100%; /* Изображение занимает всю ширину карточки */
+    height: 200px; /* Автоматическая высота для сохранения пропорций */
 }
 
-.video-courses-container a {
-    display: inline-block; /* Делаем ссылку блочным элементом */
-    margin-top: 10px; /* Отступ сверху */
-    padding: 10px 15px; /* Отступы внутри ссылки */
-    background-color: #2980b9; /* Цвет фона ссылки */
-    color: white; /* Цвет текста ссылки */
-    border-radius: 5px; /* Закругленные углы */
+.course-title {
+    font-size: 25px; /* Размер шрифта заголовка */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    color: #333; /* Цвет заголовка */
+}
+
+.course-description {
+    font-size: 1em; /* Размер шрифта описания */
+    color: #666; /* Цвет текста описания */
+    padding: 0 10px; /* Отступы по бокам */
+}
+
+.course-link {
+    display: block; /* Ссылка занимает всю ширину */
+    text-align: center; /* Центрируем текст ссылки */
+    padding: 10px; /* Отступы внутри ссылки */
+    background-color: #34495e; /* Цвет фона ссылки */
+    color: #fff; /* Цвет текста ссылки */
     text-decoration: none; /* Убираем подчеркивание */
-    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    border-radius: 5px; /* Закругленные углы */
+    margin: 10px; /* Отступы вокруг ссылки */
 }
 
-.video-courses-container a:hover {
-    background-color: #1a6a8a; /* Цвет фона ссылки при наведении */
+.course-link:hover {
+    background-color: #fff; /* Темнее при наведении */
+    color: #34495e;
+}
+
+@media (max-width: 600px) {
+    .courses-container {
+        flex-direction: column; /* Располагаем карточки в столбик на маленьких экранах */
+        align-items: center; /* Центрируем карточки */
+    }
+
+    .course-card {
+        width: 90%; /* Ширина карточки на мобильных устройствах */
+    }
 }
