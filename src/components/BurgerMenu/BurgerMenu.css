@@ -1,0 +1,62 @@
+/* BurgerMenu.css */
+
+.burger-menu {
+    position: relative; /* Для позиционирования меню */
+}
+
+.burger-icon {
+    cursor: pointer; /* Указатель при наведении */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; /* Ширина иконки */
+    height: 30px; /* Высота иконки */
+}
+
+.line {
+    width: 100%; /* Ширина линии */
+    height: 4px; /* Высота линии */
+    background-color: #333; /* Цвет линий */
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.line.open {
+    transform: rotate(45deg); /* Поворот верхней линии */
+}
+
+.line.open:nth-child(2) {
+    opacity: 0; /* Скрытие средней линии */
+}
+
+.line.open:nth-child(3) {
+    transform: rotate(-45deg); /* Поворот нижней линии */
+}
+
+.menu {
+    position: absolute; /* Позиционирование меню */
+    top: 40px; /* Отступ сверху */
+    right: 0; /* Выравнивание по правому краю */
+    background-color: white; /* Цвет фона меню */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 5px; /* Закругленные углы */
+    z-index: 1000; /* Поверх других элементов */
+}
+
+.menu ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+}
+
+.menu li {
+    padding: 10px 20px; /* Отступы внутри элементов списка */
+}
+
+.menu li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста */
+}
+
+.menu li a:hover {
+    color: #007bff; /* Цвет текста при наведении */
+}

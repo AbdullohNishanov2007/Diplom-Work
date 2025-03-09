@@ -2,7 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Импортируем Link для навигации
 import './Header.css'; // Импортируем стили
-import logo from '../assets/Logo.jpeg'
+import logo from '../assets/Logo.jpeg'; // Импортируем логотип
+import BurgerMenu from '../BurgerMenu/BurgerMenu'; // Импортируем компонент бургер-меню
 
 const Header = () => {
     return (
@@ -10,9 +11,10 @@ const Header = () => {
             <div className="container">
                 <div className="header-content">
                     <div className="logo">
-                        {/* Замените 'logo.png' на путь к вашему логотипу */}
+                        {/* Отображаем логотип */}
                         <img src={logo} className='Logo' alt="Логотип" />
                     </div>
+                    <BurgerMenu /> {/* Добавляем бургер-меню */}
                     <nav className="nav">
                         <ul>
                             <li><Link to="/">Главная</Link></li>
