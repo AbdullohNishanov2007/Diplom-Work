@@ -2,7 +2,7 @@
   "name": "auth-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/AbdullohNishanov2007/Diplom-Work", 
+  "homepage": "https://github.com/AbdullohNishanov2007/Diplom-Work",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -47,6 +47,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.13"
   }
 }
