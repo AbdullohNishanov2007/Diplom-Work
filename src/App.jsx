@@ -9,23 +9,28 @@ import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import Services from './pages/Services/Services'
 import VideoCourses from './pages/VideoCourses/VideoCourses';
+import Js from './pages/Curses/Js/Js';
+import '../src/App.css'
 
 const App = () => {
     return (
-        <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/video-courses" element={<VideoCourses />} /> 
-                
-                {/* Маршрут для страницы 404 */}
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-            <Footer />
-        </Router>
+        <div className='app'>
+            <Router>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/video-courses" element={<VideoCourses />} />
+                    <Route path="/js" element={<Js />} />
+
+                    {/* Маршрут для страницы 404 */}
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+                <Footer />
+            </Router>
+        </div>
     );
 };
 

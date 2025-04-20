@@ -1,0 +1,135 @@
+.bacround_js {
+    background-color: #fff;
+}
+
+.sectio_one_js {
+    background-color: rgb(237, 173, 24);
+    margin-top: 0;
+    height: 400px;
+    padding: 35px;
+}
+
+.section_one_js_h1 {
+    font-size: 70px;
+    color: #ffff;
+    margin-top: 100px;
+    margin-left: 100px;
+    animation: scaleAnimation 2s infinite alternate;
+    transform-origin: center; 
+}
+
+.section_one_js_ul_li_p {
+    font-size: 10px;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 800px) {
+    .section_one_js_h1 {
+        font-size: 50px;
+    }
+
+    .section_one_js_ul {
+        /* font-size: 15px; */
+        width: 90%;
+    }
+
+    .section_one_js_ul_li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .section_one_js_h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .section_one_js_h1 {
+        font-size: 30px;
+    }
+}
+
+.section_one_js_ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.section_one_js_ul_li {
+    display: flex;
+}
+
+
+.setion_one_js_ul_li_span {
+    color: rgb(134, 103, 45);
+    font-size: 25px;
+}
+
+
+/*     section_two_js         */
+
+.section_two_js {
+    margin-top: 150px;
+}
+
+.section_two_js_h1 {
+    font-size: 50px;
+    color: #393939;
+}
+
+.section_two_js_divh1 {
+    width: 100%;
+    text-align: center;
+    /* animation: scaleAnimation 2s infinite alternate; */
+}
+
+.setion_two_js_p {
+    font-size: 21px;
+    color: rgb(93, 93, 93);
+    text-align: center;
+}
+
+.section_two_js_h2 {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.section_4_js_video2_card41{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section_4_js_video2_card{
+    background-color: #ffeccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.section_4_js_video2_card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+    background-color: #f9ca0d;
+    color: #ffffff;
+}

@@ -8,14 +8,14 @@
 }
 
 .course-card {
-    background-color: #fff; /* Белый фон карточки */
+    background-color: #ebebeb; /* Белый фон карточки */
     border-radius: 10px; /* Закругленные углы */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
     margin: 10px; /* Отступы между карточками */
     width: 300px; /* Ширина карточки */
     overflow: hidden; /* Скрываем переполнение */
     transition: transform 0.3s; /* Плавный переход при наведении */
-    height: 420px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,7 +24,7 @@
 
 .course-card:hover {
     transform: scale(1.05); /* Увеличиваем карточку при наведении */
-    background-color: #ebebeb;
+    background-color: #fff;
 }
 
 .course-image {
@@ -46,18 +46,7 @@
 
 .course-link {
     display: block; /* Ссылка занимает всю ширину */
-    text-align: center; /* Центрируем текст ссылки */
-    padding: 10px; /* Отступы внутри ссылки */
-    background-color: #34495e; /* Цвет фона ссылки */
-    color: #fff; /* Цвет текста ссылки */
     text-decoration: none; /* Убираем подчеркивание */
-    border-radius: 5px; /* Закругленные углы */
-    margin: 10px; /* Отступы вокруг ссылки */
-}
-
-.course-link:hover {
-    background-color: #fff; /* Темнее при наведении */
-    color: #34495e;
 }
 
 @media (max-width: 600px) {
@@ -68,5 +57,9 @@
 
     .course-card {
         width: 90%; /* Ширина карточки на мобильных устройствах */
+    }
+
+    .course-title {
+        font-size: 20px;
     }
 }

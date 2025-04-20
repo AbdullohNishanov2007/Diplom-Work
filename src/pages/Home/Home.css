@@ -1,0 +1,83 @@
+/* Home.css */
+
+.home-container {
+    margin-top: 100px;
+    width: 80%; /* Максимальная ширина контейнера */
+    margin: auto; /* Центрирование контейнера */
+}
+
+.home-container p {
+    font-size: 1.2em; /* Размер текста */
+    margin-bottom: 15px; /* Отступ снизу */
+    color: #666; /* Цвет текста */
+}
+
+.home_container_img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.home-container-left {
+    width: 460px;
+}
+
+.home-container-left-h1 {
+    font-size: 3.2rem;
+    color: #333
+}
+
+.home-container-left-button {
+    background-image: linear-gradient(
+        to right, rgb(255, 72, 0), rgb(0, 34, 255)
+    );
+    margin-top: 20px;
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #34495e; /* Цвет фона кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+
+}
+
+.home-container-left-button:hover {
+    background-color: #4b6986;
+    color: #fff;
+}
+
+.header_container_block {
+    margin-top: 90px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.title {
+    background-image: linear-gradient(
+        to right, rgb(255, 176, 30), rgb(27, 103, 255)
+    );
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 500px) {
+    .home-container-left-h1{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .courses-container {
+        flex-direction: column; /* Располагаем карточки в столбик на маленьких экранах */
+        align-items: center; /* Центрируем карточки */
+    }
+
+    .course-card {
+        width: 90%; /* Ширина карточки на мобильных устройствах */
+    }
+
+    .home-container-left-h1 {
+        font-size: 30px;
+    }
+}
