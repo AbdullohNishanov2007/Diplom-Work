@@ -1,6 +1,10 @@
 // src/pages/VideoCourses.js
 import React from 'react';
+
 import './VideoCourses.css'; // Импортируем стили для страницы
+
+import { useScrollRestoration } from '../../components/useScrollRestoration';
+
 import js2 from '../../components/assets/Js-2.webp'
 
 import dj from '../../components/assets/django.svg'
@@ -139,6 +143,7 @@ import da106 from '../../components/assets/da106.webp'
 import py107 from '../../components/assets/py107.webp'
 
 const VideoCourses = () => {
+    useScrollRestoration();
     const courses = [
         {
             title: 'Курс по JavaScript',
@@ -149,19 +154,19 @@ const VideoCourses = () => {
         {
             title: 'Курс по React',
             description: 'Уроки React Js с нуля для начинающих',
-            link: 'https://example.com/react-course',
+            link: '/react_lesson',
             image: re 
         },
         {
             title: 'Курс по Python',
             description: 'Уроки Python для начинающих начните Python с нуля',
-            link: 'https://example.com/python-course',
+            link: '/python',
             image: py 
         },
         {
             title: 'Курс по Django',
             description: 'Уроки Python Django / создание сайта',
-            link: 'https://example.com/html-css-course',
+            link: '/django',
             image: dj 
         },
 
@@ -169,25 +174,25 @@ const VideoCourses = () => {
         {
             title: 'Вёрстка сайта',
             description: 'Верстка сайта на HTML5 и CSS3',
-            link: 'https://example.com/javascript-course',
+            link: '/Ht1',
             image: Ht1
         },
         {
             title: 'Html',
             description: 'Изучение HTML5 для начинающих!',
-            link: 'https://example.com/javascript-course',
+            link: '/H2',
             image: H2
         }, 
         {
             title: 'Css',
             description: 'Изучите Css c Нуля!',
-            link: 'https://example.com/javascript-course',
+            link: '/C3',
             image: C3
         },
         {
             title: 'Ajax',
             description: 'Изучение технологии Ajax',
-            link: 'https://example.com/javascript-course',
+            link: '/AJ5',
             image: AJ5
         },
 
@@ -195,25 +200,25 @@ const VideoCourses = () => {
         {
             title: ' jQuery ',
             description: 'Изучение библиотек jQuery',
-            link: 'https://example.com/javascript-course',
+            link: '/JQ6',
             image: JQ6
         },
         {
             title: 'PHP',
             description: 'Изучение языка PHP, а также MySQL',
-            link: 'https://example.com/javascript-course',
+            link: '/PHP7',
             image: PHP7 
         }, 
         {
             title: 'PHP',
             description: 'Создание динамического веб сайта',
-            link: 'https://example.com/javascript-course',
+            link: '/PHP8',
             image: PHP8 
         },
         {
             title: 'Unity',
             description: 'Создание игр на Unity | Для начинающих',
-            link: 'https://example.com/javascript-course',
+            link: '/Un9',
             image: Un9
         },
 
@@ -221,25 +226,25 @@ const VideoCourses = () => {
         {
             title: ' Адаптивка ',
             description: 'Создание адаптивного сайта ',
-            link: '  ',
+            link: '  /ad11  ',
             image: ad11
         }, 
         {
             title: ' Unity ',
             description: ' создание 2D игры на Android (Unity) ',
-            link: '  ',
+            link: ' /ua12 ',
             image: ua12
         }, 
         {
             title: ' java ',
             description: ' Язык Java для начинающих c нуля ',
-            link: '  ',
+            link: ' /Ja13 ',
             image: Ja13
         },
         {
             title: ' Unity 5 ',
             description: ' создание 2D игры на движке Unity 5 ',
-            link: '  ',
+            link: ' /Un14 ',
             image: Un14
         },
 
@@ -247,25 +252,25 @@ const VideoCourses = () => {
         {
             title: ' C++ ',
             description: ' C++ для начинающих с нуля ',
-            link: '  ',
+            link: ' /Cpp15 ',
             image: Cpp15
         }, 
         {
             title: ' C#',
             description: ' C# для начинающих с нуля ',
-            link: '  ',
+            link: ' /Csh16 ',
             image: Csh16
         }, 
         {
             title: ' Unity ',
             description: ' Создание игры под платформу iOS на Unity ',
-            link: '  ',
+            link: ' /Un17 ',
             image: Un17
         },
         {
             title: ' Python ',
             description: ' Python для начинающих с нуля',
-            link: '  ',
+            link: ' /Py18 ',
             image: Py18
         },
 
@@ -273,25 +278,25 @@ const VideoCourses = () => {
         {
             title: ' Bootstrap ',
             description: ' Изучение Bootstrap (верстка сайта) ',
-            link: '  ',
+            link: ' /bo19 ',
             image: bo19
         }, 
         {
             title: ' Unity 3D ',
             description: ' 3D шутер с мультиплеером в Unity ',
-            link: '  ',
+            link: ' /un20 ',
             image: un20
         }, 
         {
             title: ' Unity C#  ',
             description: ' Изучение Unity C# для начинающих ',
-            link: '  ',
+            link: ' /un21 ',
             image: un21
         },
         {
             title: ' Android Unity ',
             description: ' Android игра на Unity ',
-            link: '  ',
+            link: ' /un22 ',
             image: un22
         },
 
@@ -299,25 +304,25 @@ const VideoCourses = () => {
         {
             title: ' C++ ',
             description: ' Создание игры на C++ ',
-            link: '  ',
+            link: ' /cpp23 ',
             image: cpp23
         }, 
         {
             title: ' Unreal Engine 5 ',
             description: ' Unreal Engine 5 с нуля (Разработка игр) ',
-            link: '  ',
+            link: ' /un24 ',
             image: un24
         }, 
         {
             title: ' Blender ',
             description: ' 25. Blender для нач 3D моделирование ',
-            link: '  ',
+            link: ' /bl25 ',
             image: bl25
         },
         {
             title: ' Vuforia AR и Unity ',
             description: ' игра дополненная реальность (Vuforia AR и Unity) ',
-            link: '  ',
+            link: ' /va26 ',
             image: va26
         },
 
@@ -325,25 +330,25 @@ const VideoCourses = () => {
         {
             title: ' Игра на Python! ',
             description: ' Разработка игр на Python с нуля / Уроки Pygame ',
-            link: '  ',
+            link: ' /py27 ',
             image: py27
         }, 
         {
             title: ' Java профи ',
             description: ' Уроки Java для профессионалов ',
-            link: '  ',
+            link: ' /Ja28 ',
             image: Ja28
         }, 
         {
             title: ' C++ ',
             description: ' Уроки Qt Creator | Графический интерфейс на С++ ',
-            link: '  ',
+            link: ' /C29 ',
             image: C29
         },
         {
             title: ' Node JS ',
             description: ' Уроки Node JS для начинающих ',
-            link: '  ',
+            link: ' /Js30 ',
             image: Js30
         },
 
@@ -351,25 +356,25 @@ const VideoCourses = () => {
         {
             title: ' Сайт на Django  ',
             description: ' Уроки Python Django / Создание сайта ',
-            link: '  ',
+            link: ' /dj31 ',
             image: dj31
         }, 
         {
             title: ' Создание RPG игры ',
             description: ' Создание RPG игры в GameMaker Studio ',
-            link: '  ',
+            link: ' /st32 ',
             image: st32
         }, 
         {
             title: ' Vue.js ',
             description: ' Уроки Vue.js для начинающих ',
-            link: '  ',
+            link: ' /vu33 ',
             image: vu33
         },
         {
             title: ' Java Андроид ',
             description: ' Уроки Java Андроид программирования ',
-            link: '  ',
+            link: ' /Ja34 ',
             image: Ja34
         },
 
@@ -377,25 +382,25 @@ const VideoCourses = () => {
         {
             title: ' Ruby On Rails ',
             description: ' Создание блога на Ruby On Rails ',
-            link: '  ',
+            link: ' /ru36 ',
             image: ru36
         }, 
         {
             title: ' PHP, MySQL ',
             description: ' Видеокурс по PHP, MySQL / Создание динамического сайта ',
-            link: '  ',
+            link: ' /PHP37 ',
             image: PHP37
         }, 
         {
             title: ' Ruby ',
             description: ' Изучение языка Ruby для начинающих ',
-            link: '  ',
+            link: ' /ru38 ',
             image: ru38
         },
         {
             title: ' JavaScript ',
             description: ' Изучение JavaScript: от нуля и до создания сайта ',
-            link: '  ',
+            link: ' /js39 ',
             image: js39
         },
 
@@ -403,25 +408,25 @@ const VideoCourses = () => {
         {
             title: ' PhotoShop ',
             description: ' Уроки PhotoShop для начинающих ',
-            link: '  ',
+            link: ' /ph40 ',
             image: ph40
         }, 
         {
             title: ' Corona SDK ',
             description: ' Мобильное приложение на Corona SDK ',
-            link: '  ',
+            link: ' /co41 ',
             image: co41
         }, 
         {
             title: ' Swift ',
             description: ' Уроки Swift для начинающих ',
-            link: '  ',
+            link: '/Sw42',
             image: Sw42
         },
         {
             title: ' CMS WordPress ',
             description: ' Создание сайта с нуля на CMS WordPress ',
-            link: '  ',
+            link: '/CM43',
             image: CM43
         },
 
@@ -429,51 +434,51 @@ const VideoCourses = () => {
         {
             title: ' Unreal Engine 4 ',
             description: ' Создание игры на Unreal Engine 4 / FPS шутер ',
-            link: '  ',
+            link: '/un44',
             image: un44
         }, 
         {
             title: ' C# Windows ',
             description: ' Изучение C# и создание Windows программ ',
-            link: '  ',
+            link: '/csh45',
             image: csh45
         }, 
         {
             title: ' C++ ',
-            description: ' Изучение C++ от новичка до профи ',
-            link: '  ',
+            description: ' Полное изучение C++ / Курс в одном видео для начинающих с нуля ',
+            link: '/cpp46',
             image: cpp46
         },
         {
             title: ' Mongo DB ',
             description: ' Изучение MongoDB / Работа с базой данных ',
-            link: '  ',
+            link: '/mo47',
             image: mo47
         },
 
 
         {
             title: ' Java ',
-            description: ' Java до профи: основы, UI дизайн и Android разработка ',
-            link: '  ',
+            description: ' Java для с нуля: основы,  Android ',
+            link: '/ja48',
             image: ja48
         }, 
         {
             title: ' Python ',
             description: ' Изучение Python до профи / Основы, Django, TKinter ',
-            link: '  ',
+            link: '/Pd49',
             image: Pd49
         }, 
         {
             title: ' вёрстка ',
             description: ' Современная вёрстка адаптивного веб-сайта ',
-            link: '  ',
+            link: '/vw50',
             image: vw50
         },
         {
             title: ' React JS ',
             description: ' Создание приложения на React JS / Использование API ',
-            link: '  ',
+            link: '/js51',
             image: js51
         },
 
@@ -481,25 +486,25 @@ const VideoCourses = () => {
         {
             title: ' Angular ',
             description: ' Изучение Angular для начинающих ',
-            link: '  ',
+            link: ' /an52 ',
             image: an52
         }, 
         {
             title: ' Bootstrap 4  ',
             description: ' Верстка сайта на Bootstrap 4 ',
-            link: '  ',
+            link: ' /Bu53 ',
             image: Bu53
         }, 
         {
             title: ' Android ',
             description: ' Разработка Android программы. Создание чата ',
-            link: '  ',
+            link: ' an54 ',
             image: an54
         },
         {
             title: ' Git GitHab ',
             description: ' Изучение Git GitHab ',
-            link: '  ',
+            link: ' Git55 ',
             image: Git55
         },
 
@@ -507,25 +512,25 @@ const VideoCourses = () => {
         {
             title: ' C# ',
             description: ' Программа на C# .Net Windows Forms ',
-            link: '  ',
+            link: ' Csh56 ',
             image: Csh56
         }, 
         {
             title: ' Андроид ',
             description: ' Разработка Андроид программы с базой данных ',
-            link: '  ',
+            link: ' an57 ',
             image: an57
         }, 
         {
             title: ' Unity ',
-            description: ' 58. Дополненная Реальность Создание Unity AR приложений ',
-            link: '  ',
+            description: ' Дополненная реальность / Создание игры на Unity ',
+            link: ' un58 ',
             image: un58
         },
         {
             title: ' C# ',
             description: ' Изучение ASP .NET Core MVC Создание сайтов на C# ',
-            link: '  ',
+            link: ' asp59 ',
             image: asp59
         },
 
@@ -533,25 +538,25 @@ const VideoCourses = () => {
         {
             title: ' SQL ',
             description: ' Основы языка SQL ',
-            link: '  ',
+            link: ' sql60 ',
             image: sql60
         }, 
         {
             title: ' Gulp 4 ',
             description: ' Изучение Gulp 4 ',
-            link: '  ',
+            link: ' gu61 ',
             image: gu61
         }, 
         {
             title: ' SASS / SCSS ',
             description: ' Изучение пропроцессора SASS / SCSS ',
-            link: '  ',
+            link: ' sa62 ',
             image: sa62
         },
         {
             title: ' Golang ',
             description: ' Изучения языка Golang / Создание веб сайта на Go ',
-            link: '  ',
+            link: ' go63 ',
             image: go63
         },
 
@@ -559,25 +564,25 @@ const VideoCourses = () => {
         {
             title: ' С# ',
             description: ' Изучение С# WPF на практике Создание программ на C# ',
-            link: '  ',
+            link: ' csh64 ',
             image: csh64
         }, 
         {
             title: ' Unity 5 ',
             description: ' Разработка игр на Unity 5  Gamedev ',
-            link: '  ',
+            link: ' un65 ',
             image: un65
         }, 
         {
             title: ' Flask ',
             description: ' Изучение Flask Создание сайта на Python ',
-            link: '  ',
+            link: ' fl66 ',
             image: fl66
         },
         {
             title: ' С ',
             description: ' зучение языка Си для начинующих ',
-            link: '  ',
+            link: ' c67 ',
             image: c67
         },
 
@@ -585,25 +590,25 @@ const VideoCourses = () => {
         {
             title: ' Java ',
             description: ' Разработка сайта на Java Spring Boot ',
-            link: '  ',
+            link: ' ja68 ',
             image: ja68
         }, 
         {
             title: ' Laravel ',
             description: ' Фреймворк Laravel Создание веб-сайта ',
-            link: '  ',
+            link: ' la69 ',
             image: la69
         }, 
         {
             title: ' MEAN ',
             description: ' Изучение стека MEAN: MongoDB, Express, Angular и Node JS ',
-            link: '  ',
+            link: ' me70 ',
             image: me70
         },
         {
             title: ' Kotlin ',
             description: ' Изучение языка Kotlin для начинающих ',
-            link: '  ',
+            link: ' me71 ',
             image: me71
         },
 
@@ -611,25 +616,25 @@ const VideoCourses = () => {
         {
             title: ' Docker ',
             description: ' Изучение Docker с нуля / Уроки Докер для начинающих ',
-            link: '  ',
+            link: ' do72 ',
             image: do72
         }, 
         {
             title: ' Figma ',
             description: ' Figma с нуля Создание дизайна  ',
-            link: '  ',
+            link: ' fy73 ',
             image: fy73
         }, 
         {
             title: ' Linux ',
             description: ' Linux для начинающих уроки Ubuntu и Bash Shel ',
-            link: '  ',
+            link: ' li74 ',
             image: li74
         },
         {
             title: ' OpenCV ',
             description: ' нейронные сети Изучение Python OpenCV ',
-            link: '  ',
+            link: ' py75 ',
             image: py75
         },
 
@@ -637,25 +642,25 @@ const VideoCourses = () => {
         {
             title: ' Android Studio ',
             description: ' Разработка на Android Studio Приложение E-Commerce  ',
-            link: '  ',
+            link: ' an76 ',
             image: an76
         }, 
         {
             title: ' Futter и Dart ',
             description: ' Изучение Futter и Dart для начинающих ',
-            link: '  ',
+            link: ' fl77 ',
             image: fl77
         }, 
         {
             title: ' React Native ',
             description: ' Уроки React Native для начинающих Разработка приложения с нуля ',
-            link: '  ',
+            link: ' re78 ',
             image: re78
         },
         {
             title: ' Godot ',
             description: ' Уроки Godot Engine / Разработка игр на Годот ',
-            link: '  ',
+            link: ' go79 ',
             image: go79
         },
 
@@ -663,25 +668,25 @@ const VideoCourses = () => {
         {
             title: ' PyQt5 ',
             description: ' Изучение PyQt5 / Графический интерфейс на Python  ',
-            link: '  ',
+            link: ' py80 ',
             image: py80
         }, 
         {
             title: ' Kotlin Android Studio ',
             description: ' Kotlin Android Studio / Разработка Андроид программ  ',
-            link: '  ',
+            link: ' ko81 ',
             image: ko81
         }, 
         {
             title: ' C# 2D игра ',
             description: ' Разработка 2D игры на C# WinForms ',
-            link: '  ',
+            link: ' csh82 ',
             image: csh82
         },
         {
             title: ' Ecommerce ',
             description: ' Интернет магазин WordPress / Создание Ecommerce ',
-            link: '  ',
+            link: ' wo83 ',
             image: wo83
         },
 
@@ -689,25 +694,25 @@ const VideoCourses = () => {
         {
             title: ' Telegram Бот ',
             description: ' Разработка Telegram Ботов на Python ',
-            link: '  ',
+            link: ' te84 ',
             image: te84
         }, 
         {
             title: ' C# ',
             description: ' Xamarin Forms / Мобильные приложения на C# ',
-            link: '  ',
+            link: '  csh85',
             image: csh85
         }, 
         {
             title: ' C++ ',
             description: ' Уроки C++ WinForms / Создание программ на Windows ',
-            link: '  ',
+            link: ' cpp86 ',
             image: cpp86
         },
         {
             title: ' Основы прог ',
             description: ' Основы программирования ',
-            link: '  ',
+            link: ' os87 ',
             image: os87
         },
 
@@ -715,25 +720,25 @@ const VideoCourses = () => {
         {
             title: ' Unity ',
             description: ' Создание 3D игры на Создание 3D игры на Unity / Разработка стратегии / Разработка стратегии ',
-            link: '  ',
+            link: ' un88 ',
             image: un88
         }, 
         {
             title: ' React JS ',
             description: ' Практика React JS / Разработка магазина (eCommerce) ',
-            link: '  ',
+            link: ' re89 ',
             image: re89
         }, 
         {
             title: ' Solidity ',
             description: ' Крипто разработка на Solidity / Создание монеты ',
-            link: '  ',
+            link: '  so90',
             image: so90
         },
         {
             title: ' Java ',
             description: ' Java 3D Game / Разработка игры Minecraft ',
-            link: '  ',
+            link: ' ja91 ',
             image: ja91
         },
 
@@ -741,25 +746,25 @@ const VideoCourses = () => {
         {
             title: ' C++ ',
             description: ' Игра с дизайном на C++ / Создание C++ WinForms игры ',
-            link: '  ',
+            link: ' cpp92 ',
             image: cpp92
         }, 
         {
             title: ' C#  ',
             description: ' Создание C# WPF игры / Разработка игры с дизайном ',
-            link: '  ',
+            link: ' csh93 ',
             image: csh93
         }, 
         {
             title: ' Unity ',
             description: ' Разработка мобильной игры на Unity ',
-            link: '  ',
+            link: ' un94 ',
             image: un94
         },
         {
             title: ' Python ',
             description: ' Изучение Python UI (GUI Apps) / Программы на Питон ',
-            link: '  ',
+            link: ' py95 ',
             image: py95
         },
 
@@ -767,25 +772,25 @@ const VideoCourses = () => {
         {
             title: ' Next JS ',
             description: ' Фреймворк Next JS / Изучение NextJS для начинающих ',
-            link: '  ',
+            link: ' js96 ',
             image: js96
         }, 
         {
             title: ' Java ',
             description: ' Разработка игр на Java для начинающих ',
-            link: '  ',
+            link: ' ja97 ',
             image: ja97
         }, 
         {
             title: ' Python ',
             description: ' Уроки ChatGPT API / Разработка программ на Python и ChatGPT ',
-            link: '  ',
+            link: ' py98 ',
             image: py98
         },
         {
             title: ' Redis ',
             description: ' Изучение Redis с нуля ',
-            link: '  ',
+            link: '  re99',
             image: re99
         },
 
@@ -793,25 +798,25 @@ const VideoCourses = () => {
         {
             title: '  C# ',
             description: ' C# MAUI – Разработка приложений с нуля ',
-            link: '  ',
+            link: ' csh100 ',
             image: csh100
         }, 
         {
             title: ' Rust ',
             description: ' Изучение языка Rust для начинающих ',
-            link: '  ',
+            link: ' ru101 ',
             image: ru101
         }, 
         {
             title: ' Python ',
             description: ' Python Data Science / Обработка данных (Scikit-learn, TensorFlow) ',
-            link: '  ',
+            link: ' da102 ',
             image:  da102
         },
         {
             title: ' Nuxt JS  ',
             description: ' Курс Nuxt JS / Изучение Nuxt.js фреймворка ',
-            link: '  ',
+            link: 'js103  ',
             image: js103
         },
 
@@ -819,25 +824,25 @@ const VideoCourses = () => {
         {
             title: ' QA ',
             description: ' QA тестировщик с нуля / Тестирование для начинающих ',
-            link: '  ',
+            link: ' qa104 ',
             image: qa104
         }, 
         {
             title: ' Three.js ',
             description: ' Three.js с нуля: Разработка сайта с 3Д Графикой ',
-            link: '  ',
+            link: 'js105  ',
             image: js105
         }, 
         {
             title: ' Python ',
             description: ' Python Data Analytics / Аналитика данных (NumPy, Pandas, Matplotlib) ',
-            link: '  ',
+            link: ' da106 ',
             image: da106
         },
         {
             title: ' Python ',
             description: ' Python FastAPI / Изучение библиотеки с нуля ',
-            link: '  ',
+            link: ' py107 ',
             image: py107
         },
     ];

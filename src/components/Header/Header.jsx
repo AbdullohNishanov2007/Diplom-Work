@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Импортируем Link для навигации
 import './Header.css'; // Импортируем стили
 import logo from '../assets/Logo.jpeg'; // Импортируем логотип
+import Logo2 from '../assets/Logo2.jpg'
 import BurgerMenu from '../BurgerMenu/BurgerMenu'; // Импортируем компонент бургер-меню
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
                 <div className="header-content">
                     <div className="logo">
                         {/* Отображаем логотип */}
-                        <img src={logo} className='Logo' alt="Логотип" />
+                        <img src={Logo2} className='Logo' alt="Логотип" />
                     </div>
                     <BurgerMenu /> {/* Добавляем бургер-меню */}
                     <nav className="nav">

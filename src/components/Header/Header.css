@@ -22,8 +22,8 @@ header {
 
 .logo img {  
     border-radius: 50px;  
-    max-height: 100px;  
-    max-width: 100px;  
+    max-height: 80px;  
+    max-width: 80px;  
 }  
 
 .nav ul {  
@@ -66,3 +66,34 @@ header {
         align-items: center; /* Центрируем элементы по вертикали */  
     }  
 }  
+
+header {
+    background-color: #343434;
+    color: white;
+    padding: 10px 0;
+    animation: fadeInDown 4S ease;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav a:hover {
+    color: #3498db;
+    transform: scale(1.1);
+}
+
+/* Адаптив для бургер-меню уже у тебя хороший, оставляем */

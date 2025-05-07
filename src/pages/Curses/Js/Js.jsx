@@ -101,13 +101,15 @@ const Js = () => {
         <div className="container">
           <div className="section_3_js_video1">
             <h1>Видео №1</h1>
-            <iframe width="100%" height="315" style={{ borderRadius: '20px' }}
+            <div className='section_3_js_video1_iframe'>
+            <iframe width="70%" height="415" style={{ borderRadius: '20px' }}
               src="https://www.youtube.com/embed/fcMcf_4PjfI?si=vEf3s6DcWdQkkje4"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
           gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
+            </div>
             <h1 className="section_3_js_video1_h1">
               Описание видео
             </h1>
@@ -172,13 +174,67 @@ const Js = () => {
         <div className="container">
           <h1 className='section_4_js_video2_h1'>Видео №2</h1>
           <div className="section_4_js_video2">
-            <iframe width="100%" height="315"
+            <div className='section_3_js_video1_iframe'>
+            <iframe width="70%" height="455"
               src="https://www.youtube.com/embed/nCgFdChjnds?si=STWY-eWzxJte6BYY"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
               gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
+            </div>
+            <ul className="section_4_js_video2_ul1">
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1"
+                  className="section_4_js_video2_ul1_li_a" title=' Введение ' >00:00</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=29s"
+                  className="section_4_js_video2_ul1_li_a" title=' План изучения ' >00:29</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=91s"
+                  className="section_4_js_video2_ul1_li_a" title=' Как учиться на этом курсе ' >01:31</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=106s"
+                  className="section_4_js_video2_ul1_li_a" title=' Подключение JS-файла к HTML-странице ' >01:46</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=169s"
+                  className="section_4_js_video2_ul1_li_a" title=' Вывод информации в консоль (console.log) ' >02:49</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=223s"
+                  className="section_4_js_video2_ul1_li_a" title=' Базовый синтаксис: инструкции и точка с запятой ' >03:43</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=281s"
+                  className="section_4_js_video2_ul1_li_a" title=' Базовый синтаксис: форматирование кода ' >04:41</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=311s"
+                  className="section_4_js_video2_ul1_li_a" title=' Базовый синтаксис: комментарии в коде ' >05:11</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=311s"
+                  className="section_4_js_video2_ul1_li_a" title=' Как читать ошибки в коде ' >06:10</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+              <li className="section_4_js_video2_ul1_li">
+                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=370s"
+                  className="section_4_js_video2_ul1_li_a" title=' Заключение ' >07:24</a>
+                <p className="section_4_js_video2_ul1_li_a_p"></p>
+              </li>
+            </ul>
             <h1 className="section_4_js_video2_h2">Описание Первого урока</h1>
             <p className="section_4_js_video2_p">
               ✏️ Первый урок курса «JavaScript для начинающих».
@@ -189,58 +245,6 @@ const Js = () => {
               про форматирование кода, про комментарии в коде и про то,
               как обнаруживать в коде ошибки.
             </p>
-            <ul className="section_4_js_video2_ul1">
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1"
-                  className="section_4_js_video2_ul1_li_a">00:00</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=29s"
-                  className="section_4_js_video2_ul1_li_a">00:29</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=91s"
-                  className="section_4_js_video2_ul1_li_a">01:31</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=106s"
-                  className="section_4_js_video2_ul1_li_a">01:46</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=169s"
-                  className="section_4_js_video2_ul1_li_a">02:49</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=223s"
-                  className="section_4_js_video2_ul1_li_a">03:43</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=281s"
-                  className="section_4_js_video2_ul1_li_a">04:41</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=311s"
-                  className="section_4_js_video2_ul1_li_a">05:11</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=311s"
-                  className="section_4_js_video2_ul1_li_a">06:10</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-              <li className="section_4_js_video2_ul1_li">
-                <a href="https://www.youtube.com/watch?v=nCgFdChjnds&list=PL0MUAHwery4qn4Y27iUxmzC-JiauX7vSL&index=1&t=370s"
-                  className="section_4_js_video2_ul1_li_a">07:24</a>
-                <p className="section_4_js_video2_ul1_li_a_p"></p>
-              </li>
-            </ul>
           </div>
 
           <div className="section_4_js_video2_card41">

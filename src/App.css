@@ -18,3 +18,18 @@
 .app {
   background-color: rgb(231, 231, 231);
 }
+
+
+.h1 {
+  margin: '0';
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0;
+  padding: 50px;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #bfcce6;
+  /* background: "linear-gradient(to right, #FFD43B 50% , #306998 52%"; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent */
+}
